@@ -9,7 +9,8 @@ let input = [];
 rl.on('line', function (line) {
     input = line.split(' ');
 }).on('close', function () {
-    for(let i = 1; i <= +input[0]; i++){
+    const num = Number(input[0])
+    for(let i = 1; i <= num; i++){
         console.log('*'.repeat(i));
     }
 });
